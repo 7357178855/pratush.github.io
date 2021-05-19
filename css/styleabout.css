@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul li a:hover{
+    color: rgb(250, 12, 12);
+}
+nav ul li a:active{
+    color: green;
+}
+nav ul li a{
+    color: white;
+    font-size: 3vw;
+    text-decoration:none;
+padding: 0 5vw;
+font-weight: bold;
+}
+nav ul{height: 40px ;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+@keyframes animate{
+    0%{
+       font-size: 0px;
+    }
+    40%{
+        font-size:0px;
+    }
+    100%{
+        font-size:3vw;
+    }
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    width: 25%;
+    list-style: none;
+}
+.text{
+    text-align: center;
+    text-shadow: brown;
+    font-weight: bold;
+    background-color: black;
+    color: red;
+}
+
+.allcenter{
+    background-color: brown;
+    color: white;
+    margin: 10px 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(43, 18, 3);
+    height: 40px;
+border: 2px solid black;
+
+position: sticky;
+top: 0;
+}
+.slider{
+    height: 100px;
+    margin: 0;
+    top: 44px;
+    position: sticky;
+    z-index: -3;
+}
+main{
+    height: 80%;
+    background-color:wheat;
+    margin:0 0 20% 0 ;
+
+}
+.name{
+    font-size: 3vw;
+    font-weight: bold;
+animation-name: animate;
+animation-iteration-count: 1;
+animation-delay: 0s;
+animation-duration: 8s;
+animation-timing-function: linear;
+
+    
+}
+.profilepic{
+    width: 40%;
+    margin: 0 0 0;
+
+}
+.profilepic img{
+    border-radius: 50%;
+}
